@@ -30,3 +30,12 @@ gallery.querySelectorAll('.gallery-item').forEach(function (item) {
         item.classList.toggle('full');        
     });
 });
+
+function toggleSearch() {
+    var searchContainer = document.querySelector('.search-container');
+    if (searchContainer.style.display === "none") {
+        searchContainer.style.display = "block";
+    } else {
+        searchContainer.style.display = "none";
+    }
+}

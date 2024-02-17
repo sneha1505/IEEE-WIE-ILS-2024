@@ -2,46 +2,72 @@
 <head>
 
   <link rel="stylesheet" href="./index.css">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>
     IEEE WIE ILS 2024
   </title>
 </head>
 
 <body>
-<div id="page1" class="bg-cover bg-[url('./Assets/Images/WIE.png')]">
-  <div class="flex space-between pt-1 ">
-    <div class="flex w-1/4">
+<div class="header-container">
+  <section class="header">
+    <div class="topmost-back">
+      <links class="topmost-links">
+        <a href="#" class="topmost-menu">IEEE.org </a>
+        <a href="#" class="topmost-menu">IEEE <i>Xplore</i> Digital Library </a>
+        <a href="#" class="topmost-menu">IEEE Standards </a>
+        <a href="#" class="topmost-menu">IEEE Spectrum </a>
+        <a href="#" class="topmost-menu">More Sites </a>
+      </links>
+      <hr class="hr1">
+    </div>
+  </section>
 
-      <img class="relative w-[90px] left-3" src="./Assets/Images/image.png">
-      <img class="relative w-[300px] left-6" src="./Assets/Images/ILS2-removebg-preview.png">
+  <section class="header1">
+    <div class="d1">
+      <img src="/IEEE-WIE-ILS-2024/Assets/Images/WIE_purple_pms526.png" alt="" class="i1">
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button onclick="toggleSearch()" class="search-button"><img src="/IEEE-WIE-ILS-2024/Assets/Images/icons8-search-50.png" class="i3"></button>
+        <div class="blu">
+          <img src="/IEEE-WIE-ILS-2024/Assets/Images/logo-ieee.svg" alt="" class="i2">
+        </div>
+      </div>
     </div>
-    <div class="w-1/2">
-      <ul class="flex pt-5 justify-center">
-        <li><a class="text-white hover:text-[#74064A]" href="#">Home</a></li>
-        <li><a class="text-white hover:text-[#74064A]" href="aboutt.html">About Us</a></li>
-        <li><a class="text-white hover:text-[#74064A]" href="attendees.html">For Attendees</a></li>
-        <li><a class="text-white hover:text-[#74064A]" href="track.html">TRACKS</a></li>
-        <li><a class="text-white hover:text-[#74064A]" href="register.html">Registrations</a></li>
-        
-        
-      </ul>
+  </section>
+    <div class="flex space-between pt-1">
+      <div class="new-nav">
+        <div class="flex w-1/4">
+          <!-- <img class="relative w-[90px] left-3" src="./Assets/Images/imag.png">
+          <img class="relative w-[300px] left-6" src="./Assets/Images/ILS2-removebg-preview.png"> -->
+        </div>
+        <div class="w-1/2">
+          <ul class="flex pt-5 justify-center">
+            <li><a class="text-white hover:text-[#74064A]" href="#">Home</a></li>
+            <li><a class="text-white hover:text-[#74064A]" href="aboutt.html">About Us</a></li>
+            <li><a class="text-white hover:text-[#74064A]" href="attendees.html">For Attendees</a></li>
+            <li><a class="text-white hover:text-[#74064A]" href="track.html">TRACKS</a></li>
+            <li><a class="text-white hover:text-[#74064A]" href="register.html">Registrations</a></li>    
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="w-1/4">
-      <img class="absolute top-5 right-2 w-[160px]" src="Assets/Images/image1.png">
-    </div>
-  </div>
-  <h1 class="a font-serif bold  text-white text-center text-7xl">
-    <p class="RI">Resilience and Innovation</p>
+</div>
+
+<div class="page-content">
+  <!-- Content below the fixed navbar, including the image heading and other content -->
+  <div id="page1" class="bg-cover bg-[url('./Assets/Images/WIE.png')]"></div>
+  <h1 class="a font-serif bold text-white text-center text-7xl">
+      <p class="RI">Resilience and Innovation</p>
   </h1>
-
   <h2 class="text-5xl text-[#74064A] font-serif bold text-center ">
-    <p class="ns">Navigating A Sustainable Future</p>
+      <p class="ns">Navigating A Sustainable Future</p>
   </h2>
-
   <img class="mt-[-10px] w-[70%] mx-auto" src="./Assets/Images/We%20Are%20Women%20Close%20Up.png">
 </div>
+</div>
 <!--                                    Page 2                                           -->
+
 <div class="pl-10 bg-cover bg-[url('./Assets/Images/back.png')]">
   <h1 class="text-7xl pt-10 font-bold">
     WIE AGENDA
@@ -1245,35 +1271,104 @@
             </p>
 
             <br>
-
-            <img class="email" src="./Assets/Images/Email.png">
-              <p class="emailid">Ilsdelhisection2024@gmail.com</p>
-
-            <img class="phone" src="./Assets/Images/phone.png">
-              <p class="phoneno">+91 93684 47692</p>
-
-            <img class="location" src="./Assets/Images/location.png">
-              <p class="locate">India Habitat Centre 
-                <br>Lodhi Road Near Airforce Bal Bharati School, Lodhi Rd, Lodhi Estate, 
-                <br>New Delhi, Delhi 110003
-                </p>
               
             <div class="inputfield">
               <p class="ss">Say Something...!!</p>
               <form>
                 <img class="user" src="./Assets/Images/fi-br-user.png">  
-                <input class="yourname" type="text" value="‎‎‎ ‎   Your name......">
+                <input class="yourname" type="text" placeholder = "‎‎‎ ‎   Your name......">
 
                 <img class="user" src="./Assets/Images/fi-br-envelope (1).png">  
-                <input class="yourname" type="text" value="‎‎‎ ‎   Your mail......">
+                <input class="yourname" type="text" placeholder = " ‎‎‎ ‎   Your mail......">
 
-                <input class="message" type="text" value="‎‎‎ ‎   Message......">
+                <input class="message" type="text" placeholder = " ‎‎‎ ‎   Message......">
                 <submit class="flex py-2 text-white mt-3 text-center mx-7 bg-[#9B538E] font-bold text-xl justify-center"> SEND </submit>
 
               </form>
             </div>
-                
+            <div class="details">
+            <img class="email" src="./Assets/Images/Email.png">
+            <p class="emailid">Ilsdelhisection2024@gmail.com</p>
+
+          <img class="phone" src="./Assets/Images/phone.png">
+            <p class="phoneno">+91 93684 47692</p>
+
+          <img class="location" src="./Assets/Images/location.png">
+            <p class="locate">India International Centre
+              <br>Lodhi Road Near Airforce Bal Bharati School, Lodhi Rd, Lodhi Estate, 
+              <br>New Delhi, Delhi 110003
+              </p>
+            </div>
         </footer>
+
+
+        <div class="last">
+          <div class="last-links">
+              <a href="#" class="last-ll">Home</a>
+              <a href="#" class="last-ll">Sitemap</a>
+              <a href="#" class="last-ll">Accessibility</a>
+              <a href="#" class="last-ll">Nondiscrimination Policy</a>
+              <a href="#" class="last-ll">Terms and Conditions</a>
+              <a href="#" class="last-ll">IEEE Privacy Policy</a>
+          </div>
+          <div class="iconss">
+          <p class="copyright">
+              Content © Copyright 2024 IEEE – All rights reserved. Use of this website signifies your agreement to the IEEE Terms and Conditions.<br>
+              A not-for-profit organization, IEEE is the world’s largest technical professional organization dedicated to advancing technology for the <br>benefit of humanity.
+          </p>
+          <div class="iconsss">
+          <ul>
+            <li>
+              <a class="linkedin" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="facebook" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="twitter" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="instagram" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a class="google" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fa fa-google" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <img src="/IEEE-WIE-ILS-2024/Assets/Images/header-bkg-magenta1.png" alt="" srcset="" class="i34">
+    </div>
+        <script src="https://cdn.tailwindcss.com"></script>
     </body>
 
 </html>
