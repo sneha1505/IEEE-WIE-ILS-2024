@@ -410,7 +410,7 @@ a {
 }
 
 .container1 {
-    background-color: #000000;
+    background-color:#d896ff;
     height: 2800px;
     width: 100%;
     margin-top: -7rem;
@@ -419,6 +419,10 @@ a {
 }
 
 
+
+.venue{
+    background-color:#d896ff;
+}
 
 .speakers {
     color: #000;
@@ -789,17 +793,17 @@ a {
 }
 
 .tickets {
-    background-color: #0a0a0a;
+    background-color: #f8efef;
     width: 100%;
 
     overflow: none;
 }
 
 .ticketH {
-    color: #000;
+    color: #762297;
     font-family: "Impact";
     -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: rgb(255, 255, 255);
+    -webkit-text-stroke-color: rgb(10, 10, 10);
     font-size: 120px;
     margin-left: 3rem;
     letter-spacing: 5px;
@@ -809,7 +813,7 @@ a {
     color: #e8e1e1;
     font-family: "Impact";
     -webkit-text-stroke-width: 0px;
-    -webkit-text-stroke-color: #f1eaea;
+    -webkit-text-stroke-color: #181717;
     font-size: 80px;
     margin-left: 52rem;
     letter-spacing: 2px;
@@ -819,7 +823,7 @@ a {
     color: #000;
     font-family: "Impact";
     -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-color: rgb(240, 236, 236);
     text-align: center;
     font-size: 100px;
     letter-spacing: 5px;
@@ -870,6 +874,11 @@ a {
     color: white;
     font-size: 50px;
     font-family: "Impact";
+}
+
+.buy{
+    background-color:#9d50a4;
+
 }
 
 .buy1 {
