@@ -194,3 +194,159 @@ ul li .descr::before {
   color: var(--color);
 }
 
+.header-container {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: -380px;
+}
+
+
+.header-container1 {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: -200px;
+}
+
+.header-container2 {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: -350px;
+}
+
+.page-content {
+  margin-top: 380px;
+}
+
+.page-content1 {
+  margin-top: 380px;
+}
+
+.page-content3 {
+  margin-top: 380px;
+}
+
+.page-content4 {
+  margin-top: 380px;
+}
+
+.page-content6 {
+  margin-top: 350px;
+}
+
+.page-content5 {
+  margin-top: -120px;
+}
+
+
+.topmost-links {
+  font-size: 12px;
+  color: purple;
+  margin-left: 150px;
+}
+
+.hr1 {
+  border-color: purple;
+  margin-top: 10px;
+}
+
+.topmost-menu {
+  margin-left: 20px;
+  gap: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.topmost-menu:hover {
+  color: purple;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+
+
+.header {
+  background-color: rgb(243, 238, 238);
+  padding: 10px;
+  height: 40px;
+}
+
+.header1 {
+  background-color: white;
+  background-image: url(./Assets/Images/header-bkg-magenta1.png);
+  background-size: 27rem;
+  padding: 15px;
+  height: 150px;
+}
+
+
+.search-container {
+  margin-top: 10px;
+  position: absolute;
+  left: 60%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.search-button:hover {
+  background-color: rgb(225, 196, 225);
+}
+
+#searchInput {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 200px;
+}
+
+.i3 {
+  width: 75%;
+}
+
+.d1 {
+  display: flex;
+}
+
+.abi {
+  margin-top: 200px;
+}
+
+.new-nav {
+  background-color: purple;
+  display: block;
+  width: 100%;
+  text-size-adjust: 1px;
+  padding: 1px 0;
+  height: 40px;
+}
+
+
+.new-nav1 {
+  display: block;
+  width: 100%;
+  padding: 1px 0;
+  /* height: 70px; */
+  margin-top: -50px;
+}
