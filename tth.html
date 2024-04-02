@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment1.css">
+    <title>Payment Page</title>
+</head>
+<body>
+    <div class="barriers">
+        <div>
+        <img src="Assets/Images/ILS2.png" alt="" srcset="" class="i1">
+      </div>
+      <div>
+        <img src="Assets/Images/image1.png" alt="" srcset="" class="i2">
+        </div>
+        <div>
+        <img src="Assets/Images/image.png" alt="" srcset="" class="i3">
+      </div>
+      </div>
+    <div class="form-box">
+    <form>
+        <!-- <input type="text" name="name" placeholder="Enter your name" id="name"> -->
+        <div class="input-group"> 
+        <p>*Please re-enter your Email-ID to confirm*</p>
+        <div class="input-field">
+        <input type="text" name="email-id" placeholder="Enter your email-id to confirm" id="email-id">
+        </div>
+
+        <div class="input-field">
+        <input type="button" value="Pay" onclick="MakePayment()" class="submitt">
+       </div>
+       </div>
+
+        <!-- <input type="button" value="Clear" onclick="clearFields()"> -->
+    </form>
+</div>    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+        function MakePayment(){
+            var email = $("#email-id").val();
+            if (email.trim() === '') {
+            alert('Please enter your email address to proceed with payment.');
+            return; 
+           }
+            var splitName = name.split(' '); // Split the name into first name and last name
+            var options = {
+                // "key": "rzp_live_s3Ynp0IgHGavvt",
+                "key":"rzp_test_HzDUGjj6IRhLy4",
+                "amount": "300000",
+                "currency": "INR",
+                "name": "IEEE WIE ILS 2024",
+                "description": "Test Transaction",
+                "image": "https://attend.ieee.org/icecie-demo/wp-content/uploads/sites/110/WIE_purple_pms526.png",
+                "prefill": {
+                    // "name": name,
+                    "email": email,
+                    "contact": "" // You can add contact details here if needed
+                },
+                "notes": {
+                    "address": "Razorpay Corporate Office"
+                },
+                "theme": {
+                    "color": "#3399cc"
+                },
+                "handler": function(response){
+                    window.location.href = "ps.html";
+                }
+            };
+            var rzp1 = new Razorpay(options);
+            rzp1.open();
+        }
+     
+        function clearFields(){
+            $("#name").val("");
+            $("#email-id").val("");
+        }
+    </script>
+</body>
+</html>
