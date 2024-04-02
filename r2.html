@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="r1.css">
+    <title>Registration Page</title>
+</head>
+<body>
+  <div class="barriers">
+  <div>
+  <img src="Assets/Images/ILS2.png" alt="" srcset="" class="i1">
+</div>
+<div>
+  <img src="Assets/Images/image1.png" alt="" srcset="" class="i2">
+  </div>
+  <div>
+  <img src="Assets/Images/image.png" alt="" srcset="" class="i3">
+</div>
+</div>
+  <div class="form-box">
+    <h1>REGISTRATION FORM</h1>
+    <form>
+      <div class="input-group"> 
+
+        <div class="input-field">
+        <input type="text" name="name" placeholder="Enter your name" id="name">
+       </div>
+
+       <div class="input-field">
+        <input type="text" name="email-id" placeholder="Enter your email-id" id="email-id">
+      </div>
+
+      <div class="input-field">
+        <input type="text" name="phone" placeholder="Enter your Phone Number" id="phonee">
+      </div>
+
+      <div class="input-field">
+        <input type="text" name="yesorno" placeholder="Are you an IEEE Member? Yes or No" id="yesorno">
+      </div>
+
+      <div class="input-field">
+        <input type="text" name="sbu" placeholder="Affiliation" id="sbu">
+      </div>
+
+      <!-- <div class="input-field">
+        <input type="text" name="imn" placeholder="IEEE Membership Number (Only in the case of IEEE Member)" id="imn">
+      </div> -->
+
+        <input type="button" value="Submit" id="submit" class="submit">
+
+        <div>
+        <a href="tth.html"><input type="button" value="Head to Payment Page" class = "htpp" id="paymentButton" disabled></a>
+      </div>
+
+      </div>
+    </form>
+  </div>
+    <script type="module">
+
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
+      import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js";
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+  apiKey: "AIzaSyCW8rJcsaC1VXigYA4V12LZQ0u6njZJH3k",
+  authDomain: "ieeewie-75caa.firebaseapp.com",
+  projectId: "ieeewie-75caa",
+  storageBucket: "ieeewie-75caa.appspot.com",
+  messagingSenderId: "19064670085",
+  appId: "1:19064670085:web:08cb17bcdbd85c34d926ec"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+
+      const db = getDatabase(app);
+
+      document.getElementById("submit").addEventListener('click',function(e){
+        e.preventDefault();
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email-id").value;
+        const phone = document.getElementById("phonee").value;
+        const yesorno = document.getElementById("yesorno").value;
+        const sbu = document.getElementById("sbu").value;
+        // const imn = document.getElementById("imn").value;
+
+        if (name === "" || email === "" || phone === "" || yesorno === "" || sbu === "") {
+          alert("Please fill in all fields before submitting.");
+          return;
+        }
+
+        set(ref(db,'user/' + name), {
+          name: name,
+          email: email,
+          PhoneNumber: phone,
+          YesNo: yesorno,
+          StudentBranchorUniversity: sbu,
+        });
+
+        set(ref(db,'user/' + document.getElementById("name").value), {
+          name: document.getElementById("name").value,
+          email: document.getElementById("email-id").value,
+          PhoneNumber: document.getElementById("phonee").value,
+          YesNo:document.getElementById("yesorno").value,
+          StudentBranchorUniversity:document.getElementById("sbu").value,
+        //   ieeenumber:document.getElementById("imn").value
+        });
+        alert("Registered Successfully !!\nYou can now close this box and head to payment page");
+        document.getElementById("paymentButton").style.backgroundColor = "rgb(47, 255, 99)"; 
+        document.getElementById("paymentButton").removeAttribute("disabled"); 
+      });
+    </script>
+</body>
+</html>
