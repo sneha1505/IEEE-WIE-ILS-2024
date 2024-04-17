@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .font-outline-2 {
+    -webkit-text-stroke: 2px black;
+  }
+  .font-outline-4 {
+    -webkit-text-stroke: 4px black;
+  }
+  .font-outline-6 {
+    -webkit-text-stroke: 4px #74064a;
+  }
+  .font-outline-8 {
+    -webkit-text-stroke: 1px #A11CFFFF;
+  }
+  .font-outline-10 {
+    -webkit-text-stroke: 1px #fff;
+  }
+  html,
+  body {
+    @apply dark:bg-trueGray-900;
+  }
+}
