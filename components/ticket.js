@@ -20,6 +20,7 @@ const Track = () => {
                             <p className="text-center font-bold font-outline-10 text-[#74064a] text-4xl"> IEEE <br/>STUDENT <br/> MEMBER
                             </p>
                             <p className="text-center font-bold font-outline-10 text-4xl text-[#74064a]">₹2500</p>
+                            <button>₹2500</button>
                             <p className="text-center font-bold -mx-6 rounded-b-3xl bg-pink-900 mt-10 py-5 px-16 ">BUY</p>
                         </div>
 
