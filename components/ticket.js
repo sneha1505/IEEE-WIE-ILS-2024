@@ -21,7 +21,6 @@ const Track = () => {
                             </p>
                             <p className="text-center font-bold font-outline-10 text-4xl text-[#74064a]">₹2500</p>
                             <p className="text-center font-bold -mx-6 rounded-b-3xl bg-pink-900 mt-10 py-5 px-16">BUY</p>
-                            <p className="text-center font-bold -mx-6 rounded-b-3xl bg-pink-900 mt-10 py-5 px-16">BUY</p>
                         </div>
 
                         <div id="new"
